@@ -1,9 +1,4 @@
-# sign_up_page_ui_design
 
-A new Flutter project.
+[Sing up page UI Design Resource](https://dribbble.com/shots/23030348-Sign-up-page-UI-design),
 
-## Getting Started
-
-
-[Sing up page UI Design Resource](https://dribbble.com/shots/23030348-Sign-up-page-UI-design), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](signup_screen.png "Signup Screen")

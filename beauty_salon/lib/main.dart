@@ -1,3 +1,4 @@
+import 'package:beauty_salon/views/booking_page.dart';
 import 'package:beauty_salon/views/home_page.dart';
 import 'package:beauty_salon/views/welcome_page.dart';
 import 'package:flutter/material.dart';

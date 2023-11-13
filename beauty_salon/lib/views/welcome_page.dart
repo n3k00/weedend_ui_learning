@@ -1,3 +1,4 @@
+import 'package:beauty_salon/views/home_page.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -85,7 +86,11 @@ class WelcomePage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFF679286),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return HomePage();
+                  }));
+                },
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),
                   child: Text(

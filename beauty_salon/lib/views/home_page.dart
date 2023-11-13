@@ -1,3 +1,4 @@
+import 'package:beauty_salon/views/booking_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:icon_decoration/icon_decoration.dart';
@@ -69,60 +70,70 @@ class HomePage extends StatelessWidget {
                       scrollDirection: Axis.vertical,
                       shrinkWrap: true,
                       children: [
-                        Container(
-                          height: 260,
-                          width: MediaQuery.of(context).size.width,
-                          child: Card(
-                            color: Color(0xFF679286),
-                            semanticContainer: true,
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                            ),
-                            child: Column(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(30),
-                                  child: Image.network(
-                                    "https://cdn1.treatwell.net/images/view/v2.i5059481.w720.h480.x57F4036F/",
-                                    height: 200,
-                                    width: MediaQuery.of(context).size.width,
-                                    fit: BoxFit.fill,
+                        GestureDetector(
+                          onTap: () {
+                            showModalBottomSheet(
+                                isScrollControlled: true,
+                                context: context,
+                                builder: (context) {
+                                  return BookingPage();
+                                });
+                          },
+                          child: Container(
+                            height: 260,
+                            width: MediaQuery.of(context).size.width,
+                            child: Card(
+                              color: Color(0xFF679286),
+                              semanticContainer: true,
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                              child: Column(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(30),
+                                    child: Image.network(
+                                      "https://cdn1.treatwell.net/images/view/v2.i5059481.w720.h480.x57F4036F/",
+                                      height: 200,
+                                      width: MediaQuery.of(context).size.width,
+                                      fit: BoxFit.fill,
+                                    ),
                                   ),
-                                ),
-                                Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 24),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        "Beauty Group",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                      Text(
-                                        " * ",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                      Text(
-                                        "10:00-23:00",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                      Spacer(),
-                                      IconButton(
-                                          onPressed: () {},
-                                          icon: Icon(
-                                            Icons.favorite_border,
-                                            color: Colors.deepOrangeAccent,
-                                          )),
-                                      Text(
-                                        "1.1k",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                    ],
+                                  Spacer(),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 24),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          "Beauty Group",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        Text(
+                                          " * ",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        Text(
+                                          "10:00-23:00",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        Spacer(),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                              Icons.favorite_border,
+                                              color: Colors.deepOrangeAccent,
+                                            )),
+                                        Text(
+                                          "1.1k",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),

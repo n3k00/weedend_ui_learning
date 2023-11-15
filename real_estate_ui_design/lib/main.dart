@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_ui_design/views/filter_page.dart';
 import 'package:real_estate_ui_design/views/home_page.dart';
 import 'package:real_estate_ui_design/views/welcome_page.dart';
 
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: HomePage(),
+          /*colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,*/
+          ),
+      home: FilterPage(),
     );
   }
 }

@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
     "Real Estate",
     "Apartment",
     "House",
-    "Motel",
+    "Motels",
     "Test 1",
     "Test 2"
   ];

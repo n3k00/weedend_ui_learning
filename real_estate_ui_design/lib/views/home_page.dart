@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:real_estate_ui_design/views/filter_page.dart';
 
 class HomePage extends StatelessWidget {
   final List tabItems = [
@@ -41,9 +42,17 @@ class HomePage extends StatelessWidget {
                                 borderSide:
                                     BorderSide(color: Colors.grey, width: 1.5),
                               ),
-                              prefixIcon: Icon(
-                                FontAwesomeIcons.magnifyingGlass,
-                                color: Colors.grey,
+                              prefixIcon: IconButton(
+                                icon: Icon(
+                                  FontAwesomeIcons.magnifyingGlass,
+                                  color: Colors.grey,
+                                ),
+                                onPressed: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return FilterPage();
+                                  }));
+                                },
                               ),
                               hintText: "Search",
                               hintStyle: TextStyle(color: Colors.grey)),
@@ -87,6 +96,10 @@ class HomePage extends StatelessWidget {
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(30)),
+                                        side: BorderSide(
+                                          width: 1,
+                                          color: Colors.grey,
+                                        ),
                                         label: Text(
                                           item,
                                           style: TextStyle(

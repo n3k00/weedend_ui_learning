@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:real_estate_ui_design/views/home_page.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class WelcomePage extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
-                      "https://www.legacysir.com/localimagereader.ashx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1194i215%2Fssjpmjjwwn7m416vg5hetegve2i215&imagecache=true"),
+                      "https://www.cio.com/wp-content/uploads/2023/07/shutterstock_676661263.jpg?quality=50&strip=all&w=1024"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -49,10 +50,18 @@ class WelcomePage extends StatelessWidget {
                       children: [
                         Expanded(
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return HomePage();
+                              }));
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,
                               elevation: 0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
                               side: BorderSide(
                                 color: Colors.grey.shade300,
                               ),
@@ -74,6 +83,9 @@ class WelcomePage extends StatelessWidget {
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
                               elevation: 0,
                               side: BorderSide(
                                 color: Colors.grey.shade300,

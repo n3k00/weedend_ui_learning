@@ -2,15 +2,10 @@
 
 A new Flutter project.
 
-## Getting Started
+[Real Estate Design Resource](https://dribbble.com/shots/23037509-Real-Estate-Mobile-App-Design),
 
-This project is a starting point for a Flutter application.
+One Widget to fix in filter fix, sorry.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](welcome.png)
+![](home.png)
+![](filter.png)
